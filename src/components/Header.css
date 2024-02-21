@@ -2,22 +2,22 @@
     position: relative;
     width: 20px;
     height: 2px;
-    background: teal;
+    background: #97b3c9;
     margin: 2px 0px;
 }
 .animated1{
     animation: close1;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 .animated2{
     animation: close2;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 .animated3{
     animation: close3;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 @keyframes close1 {
@@ -59,17 +59,17 @@
 
 .no-animate1{
     animation: open1;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 .no-animate2{
     animation: open2;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 .no-animate3{
     animation: open3;
-    animation-duration:1s; 
+    animation-duration:.2s; 
     animation-fill-mode: forwards;  
 }
 @keyframes open1 {

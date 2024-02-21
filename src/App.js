@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import './App.css';
-import Header from './components/Header'
+import DeskNav from './components/DeskNav'
 import MobileMenu from './components/MobileMenu';
 import MobileMenuContext from './components/MobileMenuContext';
+import Landing from './components/Landing'
 
 function App() {
-  const [ mobileMenuOpen, setMobileMenuOpen ] = useState(true)
+  const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false)
   return (
     <div className="App">
       <MobileMenuContext.Provider value={[mobileMenuOpen, setMobileMenuOpen]}>
-        <Header />
+        <DeskNav />
+        <Landing />
         <main>
           {mobileMenuOpen && <MobileMenu /> }
         </main>
