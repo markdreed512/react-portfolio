@@ -1,0 +1,32 @@
+#work_section{
+    margin: 500px 0;
+    padding-top: 100px;
+    position: relative;
+}
+#image_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 200px;
+    gap: 5px;
+  
+} 
+.grid-item{
+    background-color: teal;
+    padding: 20px;
+}
+.grid-item:hover{
+    cursor: pointer;
+}
+.grid-item h3{
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
+}
+.grid-col-span-2{
+    grid-column: span 2;
+}
+#five{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
+import WorkView from './WorkView/WorkView'
 import styled from 'styled-components'
+
 const Main = styled.main`
     color: #fff;
     padding: 147px 260px;
@@ -62,13 +64,30 @@ const Main = styled.main`
         padding: 68px 48px 0 61px;
         align-items: center;
     }
-    
 `
+const Description = styled.p`
+    max-width: 650px;
+    border: 1px solid #97b3c9;
+    padding: 20px;
+    margin: 50px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+`
+
 function Landing() {
   return (
     <Main>
         <h1>Mark Reed</h1>
         <h2>web developer</h2>
+        <Description>
+            <span>full-stack</span> <span>|</span> 
+            <span>client-centered</span> <span>|</span> 
+            <span>pixel-perfect</span> <span>|</span> 
+            <span>hyphen-enthusiast</span>
+        </Description>
+        <WorkView />
     </Main>
   )
 }
