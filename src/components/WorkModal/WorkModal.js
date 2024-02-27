@@ -3,8 +3,11 @@ import './WorkModal.css'
 function WorkModal(props) {
   return (
     <div id="work_modal">
-        <button onClick={props.closeModal}>Close</button>
-        <h2>Work Modal</h2>
+        <div className="content">
+            <button className="close_btn" onClick={props.closeModal}>X</button>
+            <h2>{props.view}</h2>
+        </div>
+
     </div>
   )
 }

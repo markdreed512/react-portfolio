@@ -8,7 +8,6 @@
     grid-template-columns: repeat(4, 1fr);
     margin-right: 200px;
     gap: 5px;
-  
 } 
 .grid-item{
     background-color: teal;
@@ -22,10 +21,18 @@
     font-size: 40px;
     margin: 0;
 }
-.grid-col-span-2{
-    grid-column: span 2;
+#item-1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: span 2;
 }
-#five{
+
+#item-4{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: span 2;
+}
+#item-5{
     grid-column-start: 4;
     grid-row-start: 1;
     grid-row-end: span 2;
