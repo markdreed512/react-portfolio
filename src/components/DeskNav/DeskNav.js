@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import './Header.css'
-import HamburgerMenu from './HamburgerMenu'
+import './DeskNav.css'
+import HamburgerMenuIcon from './HamburgerMenuIcon/HamburgerMenuIcon'
 
 const Nav = styled.nav`
     color: #97b3c9;
@@ -57,17 +57,20 @@ const LI = styled.li`
 `
 
 export default function DeskNav() {
+    const srollToWorkSection = () => {
+        document.getElementById("work_section").scrollIntoView({behavior: 'smooth'});
+    }
     return (
         <Nav>
             <Menu>
                 <Brand>MR</Brand>
                 <UL>
-                    <LI><a href="#work_section">work</a></LI>
+                    <LI onClick={srollToWorkSection}>work</LI>
                     <LI>resume</LI>
                     <LI>contact</LI>
                 </UL>
             </Menu>
-            <HamburgerMenu />
+            <HamburgerMenuIcon />
         </Nav>
     )
 }

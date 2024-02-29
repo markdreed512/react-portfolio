@@ -37,3 +37,25 @@
     grid-row-start: 1;
     grid-row-end: span 2;
 }
+.grow {
+    animation: growAnimation 1.5s ease-in-out forwards;
+}
+  
+@keyframes growAnimation {
+    100% {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+}
+
+.shrink{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.grow .hidden{
+    display: block;
+}

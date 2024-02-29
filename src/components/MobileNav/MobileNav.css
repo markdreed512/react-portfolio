@@ -1,7 +1,4 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const Menu = styled.div`
+.mobile-nav {
     position: absolute;
     width: 100%;
     left: 0;
@@ -17,16 +14,16 @@ const Menu = styled.div`
     @media (min-width: 943px){
         display: none;
     }
-`
-const UL = styled.ul`
+}
+.mobile-nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
     margin-top: 0
-`
-const LI = styled.li`
+}
+.mobile-nav li{
     display: inline;
     padding-right:10px;
     width: 100%;
@@ -36,17 +33,4 @@ const LI = styled.li`
         cursor: pointer;
         background-color: #292929;
     }
-`
-function MobileMenu() {
-    return (
-        <Menu>
-            <UL>
-                <LI>work</LI>
-                <LI>resume</LI>
-                <LI>contact</LI>
-            </UL>
-        </Menu>
-    )
 }
-
-export default MobileMenu

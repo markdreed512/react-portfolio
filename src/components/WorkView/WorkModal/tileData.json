@@ -1,0 +1,24 @@
+{
+  "tiles": {
+    "item-1": {
+      "heading": "Susan G. Komen",
+      "paragraphs": ["paragraph 1", "paragraphs 2"]
+    },
+    "item-2": {
+      "heading": "MD Anderson Cancer Center",
+      "paragraphs": ["paragraph 1", "paragraphs 2"]
+    },
+    "item-3": {
+      "heading": "New York Public Library",
+      "paragraphs": ["paragraph 1", "paragraphs 2"]
+    },
+    "item-4": {
+      "heading": "New York Presbyterian Hospital",
+      "paragraphs": ["paragraph 1", "paragraphs 2"]
+    },
+    "item-5": {
+      "heading": "Susan G. Komen",
+      "paragraphs": ["paragraph 1", "paragraphs 2"]
+    }
+  }
+}

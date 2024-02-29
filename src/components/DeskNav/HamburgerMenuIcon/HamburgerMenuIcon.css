@@ -1,0 +1,12 @@
+.hamburger-menu-icon{
+    display:none;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (max-width: 943px){
+        display: inline;
+    }
+}
