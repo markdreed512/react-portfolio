@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './WorkView.css'
 import WorkModal from './WorkModal/WorkModal'
+import tileData from './WorkModal/tileData'
 
 
 
@@ -20,27 +21,40 @@ function WorkView() {
         setDisplayModal(false)
     }
     const renderTiles = () => {
-        const tiles = []
-        for(let i = 0; i < 5; i++){
-            const id = `item-${i + 1}`
-            const isActive = activeId === id
-            tiles.push( 
-                <div key={i} id={id} className={`grid-item`} onClick={() => openModal(id)}>
-                    <h3>{id}</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
-                </div>
-            )
-        }
-        return tiles
+        // const tiles = []
+        // for(let i = 0; i < 5; i++){
+        //     const id = `item-${i + 1}`
+        //     const isActive = activeId === id
+        //     tiles.push( 
+                // <div key={i} id={id} className={`grid-item`} onClick={() => openModal(id)}>
+                //     <h3>{id}</h3>
+                //     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                // </div>
+        //     )
+        // }
+        // return tiles
     }
   return (
     <section id="work_section">
         <h3>My Work</h3>
         <h2>{activeId}</h2>
         <div id="image_grid">
-            {renderTiles()}
+            {/* {renderTiles()} */}
+            {tileData.map((tile, i) => {
+                const id = `item-${i + 1}`
+                return(
+                    <>
+                        <div key={i} id={id} className={`grid-item`} onClick={() => openModal(id)}>
+                            <h3>{tile.heading}</h3>
+                            <div className="tile-text">{tile.text}</div>
+                        </div>
+                        
+                    </>
+                )
+            })}
+            {displayModal && <WorkModal closeModal={closeModal} view={modalView}/>}
         </div>
-        {displayModal && <WorkModal closeModal={closeModal} view={modalView}/>}
+        
     </section>
   )
 }

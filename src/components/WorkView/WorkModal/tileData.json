@@ -1,24 +1,44 @@
-{
-  "tiles": {
-    "item-1": {
-      "heading": "Susan G. Komen",
-      "paragraphs": ["paragraph 1", "paragraphs 2"]
-    },
-    "item-2": {
-      "heading": "MD Anderson Cancer Center",
-      "paragraphs": ["paragraph 1", "paragraphs 2"]
-    },
-    "item-3": {
-      "heading": "New York Public Library",
-      "paragraphs": ["paragraph 1", "paragraphs 2"]
-    },
-    "item-4": {
-      "heading": "New York Presbyterian Hospital",
-      "paragraphs": ["paragraph 1", "paragraphs 2"]
-    },
-    "item-5": {
-      "heading": "Susan G. Komen",
-      "paragraphs": ["paragraph 1", "paragraphs 2"]
-    }
+[
+  {
+    "company": "SGK",
+    "id": "item-1",
+    "heading": "Susan G. Komen",
+    "text": "SGK description",
+    "imageFile": "national_teams_screenshot.png",
+    "linkUrl": "https://secure.info-komen.org/site/SPageNavigator/Race/NRFTC/NationalTeams.html"
+  },
+  {
+    "company": "MDACC",
+    "id": "item-2",
+    "heading": "MD Anderson Cancer Center",
+    "text": "",
+    "imageFile": "national_teams_screenshot.png",
+    "linkUrl": "https://secure.info-komen.org/site/SPageNavigator/Race/NRFTC/NationalTeams.html"
+  },
+  {
+    "company": "NYPL",
+    "id": "item-3",
+    "heading": "New York Public Library",
+    "text": "",
+    "imageFile": "national_teams_screenshot.png",
+    "linkUrl": "https://secure.info-komen.org/site/SPageNavigator/Race/NRFTC/NationalTeams.html"
+  },
+  {
+    "company": "NYPH",
+    "id": "item-4",
+    "heading": "New York Presbyterian Hospital",
+    "text": "",
+    "imageFile": "national_teams_screenshot.png",
+    "linkUrl": "https://secure.info-komen.org/site/SPageNavigator/Race/NRFTC/NationalTeams.html"
+  },
+  {
+    "company": "SGK_2",
+    "id": "item-5",
+    "heading": "Susan G. Komen",
+    "text": "",
+    "imageFile": "national_teams_screenshot.png",
+    "linkUrl": "https://secure.info-komen.org/site/SPageNavigator/Race/NRFTC/NationalTeams.html"
   }
-}
+]
+
+

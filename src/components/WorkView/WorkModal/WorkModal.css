@@ -1,5 +1,5 @@
 #work_modal{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left:0px;
     width: 100vw;
@@ -9,12 +9,12 @@
     align-items: center;
 }
 #work_modal .content{
-    width: 800px;
+    width: 100%;
     max-width: 100%;
+    height: 100vh;
     background-color: rgba(0,0,0,0.9);
     padding: 35px;
     border-radius: 5px;
-    position: relative;
 }
 .button-container{
     position: absolute;
@@ -32,8 +32,11 @@
     cursor: pointer;
     opacity: 0.8;
 }
-.tile-heading{
+.modal-heading{
     margin: 0;
     font-size: 26px;
     font-weight: 600;;
+}
+.modal-img{
+    width: 100%;
 }

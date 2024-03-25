@@ -1,5 +1,5 @@
 import React from 'react'
 
-const MobileNavContext = React.createContext()
+const MobileMenuContext = React.createContext()
 
-export default MobileNavContext
+export default MobileMenuContext
